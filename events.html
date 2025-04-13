@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Legacy of Grace International Christian School - Events</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Noto+Sans+Thai:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+    .gallery-container {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    .thumbnail {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    .thumbnail:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    .modal-img {
+        max-width: 100%;
+        max-height: 80vh;
+        object-fit: contain;
+    }
+    .parallax-section {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 500px;
+        position: relative;
+    }
+    .parallax-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(23, 14, 69, 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+</style>
+</head>
+<body style="margin-top: 50px;">
+
+<nav class="row-container">
+    <div class="nav-brand">
+        <img src="images/lics.png" alt="Logo">
+        <h1>Legacy of Grace International Christian School</h1>
+    </div>
+    <div class="hamburger" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="nav-links">
+        <a href="index.html">Our School</a>
+        <a href="academics.html">Academics</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="events.html" class="active">Event Gallery</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<div class="parallax-section" style="background-image: url('images/10.jpg');">
+    <div class="parallax-overlay">
+        <h1>Event Gallery</h1>
+    </div>
+</div>
+
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-4 col-sm-6">
+            <div class="gallery-container">
+                <img src="images/events/489759210_1122999086507473_8292948124956635718_n.jpg" class="thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/events/489759210_1122999086507473_8292948124956635718_n.jpg">
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="gallery-container">
+                <img src="images/events/489693872_1122999339840781_1584330728741284168_n.jpg" class="thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/events/489693872_1122999339840781_1584330728741284168_n.jpg">
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="gallery-container">
+                <img src="images/events/489033858_1123170296490352_9081740400068491119_n.jpg" class="thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/events/489033858_1123170296490352_9081740400068491119_n.jpg">
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="gallery-container">
+                <img src="images/events/489432294_1124803316327050_2918571215081973929_n.jpg" class="thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/events/489432294_1124803316327050_2918571215081973929_n.jpg">
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="gallery-container">
+                <img src="images/events/489865084_1124803142993734_5723957186021476107_n.jpg" class="thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/events/489865084_1124803142993734_5723957186021476107_n.jpg">
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="gallery-container">
+                <img src="images/events/490115503_1124803242993724_2120805697652814463_n.jpg" class="thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/events/490115503_1124803242993724_2120805697652814463_n.jpg">
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="gallery-container">
+                <img src="images/events/490024359_1125648422909206_3197072310535306927_n.jpg" class="thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/events/490024359_1125648422909206_3197072310535306927_n.jpg">
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="gallery-container">
+                <img src="images/events/489947304_1125648192909229_255731758792405666_n.jpg" class="thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/events/489947304_1125648192909229_255731758792405666_n.jpg">
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="gallery-container">
+                <img src="images/events/489955427_1125648369575878_2314202458834858080_n.jpg" class="thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/events/489955427_1125648369575878_2314202458834858080_n.jpg">
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="gallery-container">
+                <img src="images/events/490409303_1125878769552838_7025365136982717529_n.jpg" class="thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/events/490409303_1125878769552838_7025365136982717529_n.jpg">
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="gallery-container">
+                <img src="images/events/489344520_1125878669552848_2668394768641595096_n.jpg" class="thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/events/489344520_1125878669552848_2668394768641595096_n.jpg">
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="gallery-container">
+                <img src="images/events/490411861_1125878696219512_3620763558312396379_n.jpg" class="thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/events/490411861_1125878696219512_3620763558312396379_n.jpg">
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="gallery-container">
+                <img src="images/events/490357872_1125878846219497_7618990367414377487_n.jpg" class="thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/events/490357872_1125878846219497_7618990367414377487_n.jpg">
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="gallery-container">
+                <img src="images/events/490411947_1126683922805656_380528535867585612_n.jpg" class="thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/events/490411947_1126683922805656_380528535867585612_n.jpg">
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="gallery-container">
+                <img src="images/events/490636988_1126684122805636_839388663521935057_n.jpg" class="thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/events/490636988_1126684122805636_839388663521935057_n.jpg">
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="gallery-container">
+                <img src="images/events/490063287_1126683902805658_5793737007966041877_n.jpg" class="thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/events/490063287_1126683902805658_5793737007966041877_n.jpg">
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="gallery-container">
+                <img src="images/events/490549842_1126724039468311_2773504706565629104_n.jpg" class="thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/events/490549842_1126724039468311_2773504706565629104_n.jpg">
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="gallery-container">
+                <img src="images/events/490185623_1126725256134856_2090791559586134762_n.jpg" class="thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/events/490185623_1126725256134856_2090791559586134762_n.jpg">
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="gallery-container">
+                <img src="images/events/490122753_1126813612792687_673637980384068367_n.jpg" class="thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/events/490122753_1126813612792687_673637980384068367_n.jpg">
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="gallery-container">
+                <img src="images/events/490299923_1126813342792714_1338269008281006913_n.jpg" class="thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/events/490299923_1126813342792714_1338269008281006913_n.jpg">
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="gallery-container">
+                <img src="images/events/489955328_1126813246126057_1907064010962558859_n.jpg" class="thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/events/489955328_1126813246126057_1907064010962558859_n.jpg">
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="gallery-container">
+                <img src="images/events/489959174_1126813466126035_7401253031680075936_n.jpg" class="thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/events/489959174_1126813466126035_7401253031680075936_n.jpg">
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="gallery-container">
+                <img src="images/events/489314430_1119712566836125_224084500936541340_n.jpg" class="thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/events/489314430_1119712566836125_224084500936541340_n.jpg">
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="gallery-container">
+                <img src="images/events/489464339_1124262936381088_8446317172462477813_n.jpg" class="thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/events/489464339_1124262936381088_8446317172462477813_n.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="" class="modal-img" id="modalImage">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function toggleNav() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+}
+
+// Modal image update
+document.getElementById('imageModal').addEventListener('show.bs.modal', function (event) {
+    const button = event.relatedTarget;
+    const imgSrc = button.getAttribute('data-img');
+    const modalImage = document.getElementById('modalImage');
+    modalImage.src = imgSrc;
+});
+</script>
+
+</body>
+</html>

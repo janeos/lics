@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Legacy of Grace International Christian School - Academics</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Noto+Sans+Thai:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+    .academic-card {
+        background-color: #170e45;
+        color: white;
+        border-radius: 15px;
+        padding: 20px;
+        margin-bottom: 30px;
+        transition: transform 0.3s ease;
+    }
+    .academic-card:hover {
+        transform: translateY(-5px);
+    }
+    .academic-icon {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        color: #fff;
+    }
+    .section-title {
+        color: #170e45;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    h3{
+        color: #ffffff;
+    }
+</style>
+</head>
+<body style="margin-top: 50px;">
+
+<nav class="row-container">
+    <div class="nav-brand">
+        <img src="images/lics.png" alt="Logo">
+        <h1>Legacy of Grace International Christian School</h1>
+    </div>
+    <div class="hamburger" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="nav-links">
+        <a href="index.html">Our School</a>
+        <a href="academics.html" class="active">Academics</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="events.html">Event Gallery</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<div class="bgimg-1" style="background-image: url('images/01.jpg');">
+    <div class="caption1">
+        Our Academic Programs
+    </div>
+</div>
+
+<div class="container py-5">
+    <div class="row">
+        <div class="col-12">
+            <p class="lead text-center mb-5">
+                At Legacy of Grace International Christian School, we believe in providing a well-rounded education that prepares students for success in all areas of life. Our academic programs are designed to challenge and inspire students to reach their full potential.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="academic-card">
+                <i class="fas fa-book academic-icon"></i>
+                <h3>Literacy</h3>
+                <p>Our literacy program is designed to help students develop strong reading and writing skills that will serve them well throughout their academic and professional careers.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="academic-card">
+                <i class="fas fa-flask academic-icon"></i>
+                <h3>Science</h3>
+                <p>We offer a comprehensive science program covering biology, chemistry, physics, and earth science with hands-on experiments and engaging activities.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="academic-card">
+                <i class="fas fa-language academic-icon"></i>
+                <h3>Chinese</h3>
+                <p>Immerse yourself in Chinese culture and language with our comprehensive Mandarin program, covering phonetics, daily expressions, and cultural understanding.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="academic-card">
+                <i class="fas fa-pen academic-icon"></i>
+                <h3>Writing</h3>
+                <p>Our writing program focuses on building strong foundational skills while encouraging creativity and self-expression.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="academic-card">
+                <i class="fas fa-globe academic-icon"></i>
+                <h3>Geography</h3>
+                <p>We provide a comprehensive understanding of the earth's physical features and human activities, essential for global citizenship.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="academic-card">
+                <i class="fas fa-language academic-icon"></i>
+                <h3>Thai</h3>
+                <p>Students learn reading, writing, and speaking Thai language, along with Thai culture, traditions, and values.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="academic-card">
+                <i class="fas fa-calculator academic-icon"></i>
+                <h3>Mathematics</h3>
+                <p>Our comprehensive math program covers everything from basic arithmetic to advanced calculus, building strong problem-solving skills.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="academic-card">
+                <i class="fas fa-running academic-icon"></i>
+                <h3>Physical Education</h3>
+                <p>Our program includes various sports and activities designed to develop strength, coordination, teamwork, and sportsmanship.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="academic-card">
+                <i class="fas fa-laptop academic-icon"></i>
+                <h3>ICT</h3>
+                <p>Students learn Computer Science including mTiny (Kindergarten), Scratch & Robotics (mBots), using modern teaching methods and technology.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function toggleNav() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+}
+</script>
+
+</body>
+</html>

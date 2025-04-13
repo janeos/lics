@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Legacy of Grace International Christian School - Facilities</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Noto+Sans+Thai:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+    .facility-card {
+        background-color: #170e45;
+        color: white;
+        border-radius: 15px;
+        padding: 20px;
+        margin-bottom: 30px;
+        transition: transform 0.3s ease;
+    }
+    .facility-card:hover {
+        transform: translateY(-5px);
+    }
+    .facility-icon {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        color: #fff;
+    }
+    .gallery-img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+    .gallery-img:hover {
+        transform: scale(1.05);
+    }
+    .gallery-item {
+        margin-bottom: 30px;
+    }
+    h3{
+        color: #ffffff;
+    }
+</style>
+</head>
+<body style="margin-top: 50px;">
+
+<nav class="row-container">
+    <div class="nav-brand">
+        <img src="images/lics.png" alt="Logo">
+        <h1>Legacy of Grace International Christian School</h1>
+    </div>
+    <div class="hamburger" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="nav-links">
+        <a href="index.html">Our School</a>
+        <a href="academics.html">Academics</a>
+        <a href="facilities.html" class="active">Facilities</a>
+        <a href="events.html">Event Gallery</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<div class="bgimg-1" style="background-image: url('images/20.jpg');">
+    <div class="caption1">
+        Our Facilities
+    </div>
+</div>
+
+<div class="container py-5">
+    <div class="row">
+        <div class="col-12">
+            <p class="lead text-center mb-5">
+                At Legacy of Grace International Christian School, we provide state-of-the-art facilities to support our students' learning and development.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="facility-card">
+                <i class="fas fa-flask facility-icon"></i>
+                <h3>Science Labs</h3>
+                <p>Dedicated science laboratories equipped with modern equipment for hands-on learning and experiments.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="facility-card">
+                <i class="fas fa-laptop facility-icon"></i>
+                <h3>ICT Labs</h3>
+                <p>Information and Communication Technology labs with modern computers and software for digital learning.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="facility-card">
+                <i class="fas fa-chalkboard facility-icon"></i>
+                <h3>Interactive Classrooms</h3>
+                <p>Classrooms equipped with interactive Promethean Boards for engaging and interactive learning experiences.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="facility-card">
+                <i class="fas fa-robot facility-icon"></i>
+                <h3>Robotics Lab</h3>
+                <p>Specialized lab for robotics and programming education, fostering innovation and technical skills.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="facility-card">
+                <i class="fas fa-tools facility-icon"></i>
+                <h3>Makers Room</h3>
+                <p>Space for design thinking and project-based learning, encouraging creativity and problem-solving.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="facility-card">
+                <i class="fas fa-running facility-icon"></i>
+                <h3>Sports Facilities</h3>
+                <p>Indoor sports hall and multipurpose hall for physical education and various sports activities.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="facility-card">
+                <i class="fas fa-book facility-icon"></i>
+                <h3>Libraries</h3>
+                <p>Well-stocked libraries providing resources for research, reading, and academic support.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="facility-card">
+                <i class="fas fa-palette facility-icon"></i>
+                <h3>Arts Facilities</h3>
+                <p>Dedicated spaces for art, music, and drama, nurturing creative expression and talent.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="facility-card">
+                <i class="fas fa-microscope facility-icon"></i>
+                <h3>Science Art Lab</h3>
+                <p>Specialized laboratory combining science and art for innovative learning experiences.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <h2 class="text-center mb-4">Facility Gallery</h2>
+        <div class="col-md-4 gallery-item">
+            <img src="images/01.jpg" alt="School Facility" class="gallery-img">
+        </div>
+        <div class="col-md-4 gallery-item">
+            <img src="images/02.jpg" alt="School Facility" class="gallery-img">
+        </div>
+        <div class="col-md-4 gallery-item">
+            <img src="images/03.jpg" alt="School Facility" class="gallery-img">
+        </div>
+        <div class="col-md-4 gallery-item">
+            <img src="images/04.jpg" alt="School Facility" class="gallery-img">
+        </div>
+        <div class="col-md-4 gallery-item">
+            <img src="images/05.jpg" alt="School Facility" class="gallery-img">
+        </div>
+        <div class="col-md-4 gallery-item">
+            <img src="images/06.jpg" alt="School Facility" class="gallery-img">
+        </div>
+    </div>
+</div>
+
+<script>
+function toggleNav() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+}
+</script>
+
+</body>
+</html>
