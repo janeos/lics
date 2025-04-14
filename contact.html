@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Legacy of Grace International Christian School - Contact</title>
+<title>Legacy of Grace International Christian School - Contact Us</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,41 +15,64 @@
 
 <style>
     .contact-section {
-        padding: 80px 0;
+        padding: 50px 0;
         background-color: #f8f9fa;
     }
-    .contact-info {
-        background: white;
+    .contact-info-card {
+        background-color: #170e45;
+        color: white;
+        border-radius: 15px;
         padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    }
-    .contact-icon {
-        font-size: 2rem;
-        color: #170e45;
-        margin-bottom: 20px;
-    }
-    .contact-item {
         margin-bottom: 30px;
+        height: 100%;
     }
-    .contact-item h3 {
-        color: #170e45;
+    .contact-info-card i {
+        color: #FFD700;
+        font-size: 2rem;
         margin-bottom: 15px;
     }
-    .contact-item p {
-        color: #666;
-        line-height: 1.6;
+    .contact-form {
+        background-color: #170e45;
+        padding: 30px;
+        border-radius: 15px;
+        color: white;
+    }
+    .contact-form .form-control {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: white;
+    }
+    .contact-form .form-control::placeholder {
+        color: rgba(255, 255, 255, 0.7);
+    }
+    .contact-form .form-control:focus {
+        background-color: rgba(255, 255, 255, 0.2);
+        border-color: #FFD700;
+        color: white;
+        box-shadow: none;
+    }
+    .contact-form label {
+        color: #FFD700;
+    }
+    .btn-submit {
+        background-color: #FFD700;
+        color: #170e45;
+        padding: 10px 30px;
+        border-radius: 25px;
+        font-weight: bold;
+        border: none;
+    }
+    .btn-submit:hover {
+        background-color: #ffd900;
+        color: #170e45;
     }
     .map-container {
-        height: 400px;
-        border-radius: 10px;
+        border-radius: 15px;
         overflow: hidden;
-        margin-top: 30px;
+        margin-bottom: 30px;
     }
-    .map-container iframe {
-        width: 100%;
-        height: 100%;
-        border: 0;
+    .contact-info-card h3 {
+        color: #87CEEB;
     }
 </style>
 </head>
@@ -67,6 +90,7 @@
     </div>
     <div class="nav-links">
         <a href="index.html">Our School</a>
+        <a href="ace.html">ACE Program</a>
         <a href="academics.html">Academics</a>
         <a href="facilities.html">Facilities</a>
         <a href="events.html">Event Gallery</a>
@@ -74,43 +98,113 @@
     </div>
 </nav>
 
-<div class="parallax-section" style="background-image: url('images/20.jpg');">
-    <div class="parallax-overlay">
-        <h1>Contact Us</h1>
+<div class="bgimg-1" style="background-image: url('images/20.jpg');">
+    <div class="caption1" style="font-size: 45px; height: 150px; display: flex; align-items: center; justify-content: center;">
+        Contact Us
     </div>
 </div>
 
 <div class="contact-section">
     <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-4">
+                <div class="contact-info-card text-center">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>13/4 Bang Luek Subdistrict, Mueang District, Chumphon Province</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="contact-info-card text-center">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>088 632 7181</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="contact-info-card text-center">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>info@lics.ac.th</p>
+                </div>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-md-6">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt contact-icon"></i>
-                        <h3>Address</h3>
-                        <p>13/4 Bang Luek Subdistrict, Mueang District, Chumphon Province 86000, Thailand</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone contact-icon"></i>
-                        <h3>Phone</h3>
-                        <p>088 632 7181</p>
-                        <p>Office Hours: 8:00 AM - 4:00 PM</p>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope contact-icon"></i>
-                        <h3>Email</h3>
-                        <p>info@lics.ac.th</p>
-                    </div>
+                <div class="contact-form">
+                    <h2 class="text-center mb-4" style="color: #FFD700;">Send Us a Message</h2>
+                    <p class="text-center mb-4">We'd love to hear from you! Please leave your message below and we'll get back to you as soon as possible.</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Subject of your message" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Your message or concern" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-submit">Send Message</button>
+                        </div>
+                    </form>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5020.607443932343!2d99.18214001153733!3d10.539270863478176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30f8ab002bbb985d%3A0xe2d71b57df92632d!2sLegacy%20of%20Grace%20International%20Christian%20School!5e1!3m2!1sen!2sth!4v1744532569934!5m2!1sen!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.123456789012!2d99.12345678901234!3d10.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDA3JzI0LjQiTiA5OcKwMDcnMjQuNCJF!5e0!3m2!1sen!2sth!4v1234567890123!5m2!1sen!2sth" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                    </iframe>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<footer style="background-color: #170e45; color: white; padding: 30px 0; margin-top: 50px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Contact Us</h4>
+                <p>13/4 Bang Luek Subdistrict, Mueang District, Chumphon Province</p>
+                <p>Tel: 088 632 7181</p>
+                <p>Email: info@lics.ac.th</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Quick Links</h4>
+                <p><a href="index.html" style="color: white;">Home</a></p>
+                <p><a href="academics.html" style="color: white;">Academics</a></p>
+                <p><a href="facilities.html" style="color: white;">Facilities</a></p>
+                <p><a href="contact.html" style="color: white;">Contact</a></p>
+            </div>
+            <div class="col-md-4">
+                <h4>Follow Us</h4>
+                <div style="font-size: 24px;">
+                    <a href="https://www.facebook.com/@LICSChumphon/" target="_blank" style="color: white; margin-right: 15px; text-decoration: none; transition: color 0.3s;"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/legacyofgrace_international/" target="_blank" style="color: white; margin-right: 15px; text-decoration: none; transition: color 0.3s;"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@LICSchannel" target="_blank" style="color: white; text-decoration: none; transition: color 0.3s;"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <p>&copy; 2024 Legacy of Grace International Christian School. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <script>
 function toggleNav() {

@@ -21,6 +21,10 @@
         padding: 20px;
         margin-bottom: 30px;
         transition: transform 0.3s ease;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
     }
     .facility-card:hover {
         transform: translateY(-5px);
@@ -29,6 +33,14 @@
         font-size: 2.5rem;
         margin-bottom: 15px;
         color: #fff;
+    }
+    .facility-card h3 {
+        color: #ffffff;
+        margin-bottom: 15px;
+    }
+    .facility-card p {
+        flex-grow: 1;
+        margin-bottom: 0;
     }
     .gallery-img {
         width: 100%;
@@ -46,6 +58,21 @@
     h3{
         color: #ffffff;
     }
+    .modal-img {
+        max-width: 100%;
+        max-height: 80vh;
+        object-fit: contain;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 50%;
+        padding: 20px;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 5%;
+    }
 </style>
 </head>
 <body style="margin-top: 50px;">
@@ -62,6 +89,7 @@
     </div>
     <div class="nav-links">
         <a href="index.html">Our School</a>
+        <a href="ace.html">ACE Program</a>
         <a href="academics.html">Academics</a>
         <a href="facilities.html" class="active">Facilities</a>
         <a href="events.html">Event Gallery</a>
@@ -86,72 +114,60 @@
 
     <div class="row">
         <div class="col-md-4">
-            <div class="facility-card">
+            <div class="facility-card" data-bs-toggle="modal" data-bs-target="#facilityModal" 
+                data-images='["images/science1.jpg", "images/science2.1.jpg", "images/science3.jpg", "images/science4.jpg", "images/science5.jpg", "images/science6.jpg"]' 
+                data-title="Science Labs">
                 <i class="fas fa-flask facility-icon"></i>
                 <h3>Science Labs</h3>
                 <p>Dedicated science laboratories equipped with modern equipment for hands-on learning and experiments.</p>
             </div>
         </div>
         <div class="col-md-4">
-            <div class="facility-card">
+            <div class="facility-card" data-bs-toggle="modal" data-bs-target="#facilityModal" 
+                data-images='["images/ict1.jpg", "images/ict2.jpg", "images/ict3.jpg", "images/ict4.jpg", "images/ict5.jpg", "images/ict6.jpg"]' 
+                data-title="ICT & Robotics Lab">
                 <i class="fas fa-laptop facility-icon"></i>
-                <h3>ICT Labs</h3>
-                <p>Information and Communication Technology labs with modern computers and software for digital learning.</p>
+                <h3>ICT & Robotics Lab</h3>
+                <p>Information and Communication Technology labs with modern computers, software, and robotics equipment for digital learning and programming education.</p>
             </div>
         </div>
         <div class="col-md-4">
-            <div class="facility-card">
-                <i class="fas fa-chalkboard facility-icon"></i>
-                <h3>Interactive Classrooms</h3>
-                <p>Classrooms equipped with interactive Promethean Boards for engaging and interactive learning experiences.</p>
+            <div class="facility-card" data-bs-toggle="modal" data-bs-target="#facilityModal" 
+                data-images='["images/pbl1.jpg", "images/pbl2.jpg", "images/pbl3.jpg", "images/pbl4.jpg", "images/pbl5.jpg", "images/pbl6.jpg"]' 
+                data-title="PBL Room">
+                <i class="fas fa-tools facility-icon"></i>
+                <h3>PBL Room</h3>
+                <p>Project-Based Learning space for hands-on activities, encouraging creativity, problem-solving, and collaborative learning.</p>
             </div>
         </div>
     </div>
 
     <div class="row">
         <div class="col-md-4">
-            <div class="facility-card">
-                <i class="fas fa-robot facility-icon"></i>
-                <h3>Robotics Lab</h3>
-                <p>Specialized lab for robotics and programming education, fostering innovation and technical skills.</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="facility-card">
-                <i class="fas fa-tools facility-icon"></i>
-                <h3>Makers Room</h3>
-                <p>Space for design thinking and project-based learning, encouraging creativity and problem-solving.</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="facility-card">
+            <div class="facility-card" data-bs-toggle="modal" data-bs-target="#facilityModal" 
+                data-images='["images/sports1.jpg", "images/sports2.jpg", "images/sports3.jpg", "images/sports4.jpg", "images/sports5.jpg", "images/sports6.jpg"]' 
+                data-title="Sports Facilities">
                 <i class="fas fa-running facility-icon"></i>
                 <h3>Sports Facilities</h3>
                 <p>Indoor sports hall and multipurpose hall for physical education and various sports activities.</p>
             </div>
         </div>
-    </div>
-
-    <div class="row">
         <div class="col-md-4">
-            <div class="facility-card">
-                <i class="fas fa-book facility-icon"></i>
-                <h3>Libraries</h3>
-                <p>Well-stocked libraries providing resources for research, reading, and academic support.</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="facility-card">
+            <div class="facility-card" data-bs-toggle="modal" data-bs-target="#facilityModal" 
+                data-images='["images/arts1.jpg", "images/arts2.jpg", "images/arts3.jpg", "images/arts4.jpg", "images/arts5.jpg", "images/arts6.jpg"]' 
+                data-title="Arts Facilities">
                 <i class="fas fa-palette facility-icon"></i>
                 <h3>Arts Facilities</h3>
                 <p>Dedicated spaces for art, music, and drama, nurturing creative expression and talent.</p>
             </div>
         </div>
         <div class="col-md-4">
-            <div class="facility-card">
-                <i class="fas fa-microscope facility-icon"></i>
-                <h3>Science Art Lab</h3>
-                <p>Specialized laboratory combining science and art for innovative learning experiences.</p>
+            <div class="facility-card" data-bs-toggle="modal" data-bs-target="#facilityModal" 
+                data-images='["images/library.jpg", "images/library2..jpg", "images/library3.jpg", "images/library4.jpg", "images/library5.jpg", "images/library6.jpg"]' 
+                data-title="Libraries">
+                <i class="fas fa-book facility-icon"></i>
+                <h3>Libraries</h3>
+                <p>Well-stocked libraries providing resources for research, reading, and academic support.</p>
             </div>
         </div>
     </div>
@@ -179,11 +195,75 @@
     </div>
 </div>
 
+<!-- Facility Modal -->
+<div class="modal fade" id="facilityModal" tabindex="-1" aria-labelledby="facilityModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="facilityModalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="facilityCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="" class="d-block w-100 modal-img" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="" class="d-block w-100 modal-img" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="" class="d-block w-100 modal-img" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="" class="d-block w-100 modal-img" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="" class="d-block w-100 modal-img" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="" class="d-block w-100 modal-img" alt="">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#facilityCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#facilityCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script>
 function toggleNav() {
     const navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('active');
 }
+
+// Facility Modal image update
+document.getElementById('facilityModal').addEventListener('show.bs.modal', function (event) {
+    const button = event.relatedTarget;
+    const images = JSON.parse(button.getAttribute('data-images'));
+    const title = button.getAttribute('data-title');
+    const modalTitle = document.getElementById('facilityModalLabel');
+    const carouselItems = document.querySelectorAll('#facilityCarousel .carousel-item img');
+    
+    modalTitle.textContent = title;
+    
+    // Update carousel images
+    carouselItems.forEach((item, index) => {
+        item.src = images[index];
+    });
+    
+    // Reset carousel to first slide
+    const carousel = new bootstrap.Carousel(document.getElementById('facilityCarousel'));
+    carousel.to(0);
+});
 </script>
 
 </body>
